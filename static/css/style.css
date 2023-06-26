@@ -1,0 +1,76 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,700&display=swap');
+
+
+html {
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+}
+body {
+ 
+  background-color: rgb(240, 166, 70);
+}
+a {
+  text-decoration: none;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: top;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.old_price {
+  font-weight: bold;
+  color: red;
+}
+
+.new_price {
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.small-image {
+  max-width: 300px !important;  /* Adjust the width as needed */
+  max-height: auto !important;
+}
+
+
+.hot {
+  background-color: orangered;
+  color: white;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  display: inline;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 10;
+}
+@media (max-width: 576px) {
+  .pic-box {
+    text-align: center;
+  }
+
+  .small-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .pic-box .hot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
